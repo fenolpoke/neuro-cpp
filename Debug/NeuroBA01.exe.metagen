@@ -1,0 +1,59 @@
+  NeuroBA01.Form1.resources - Embedded, ContainedInManifestFile, 
+  NeuroBA01.InsertAlbumForm.resources - Embedded, ContainedInManifestFile, 
+  NeuroBA01.RecognizeForm.resources - Embedded, ContainedInManifestFile, 
+  NeuroBA01.TrainNeuralMusic.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly NeuroBA01, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class NeuroBA01.InsertAlbumForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, System.String[], System.String[], System.Drawing.Bitmap[], Int32[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class NeuroBA01.TrainNeuralMusic: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    fann* brain : Public
+    fann_train_data* data : Public
+    Single[,] inputs : Public
+    Single[,] outputs : Public
+    System.Drawing.Bitmap[] pictures : Public
+    System.String[] names : Public
+    Int32 width IsConst : Public, Static, HasDefault
+    Int32 height IsConst : Public, Static, HasDefault
+    Int32 num_data IsConst : Public, Static, HasDefault
+  Methods:
+    loadMusic(): PrivateScope, Public, HideBySig
+Class NeuroBA01.RecognizeForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    fann* brain : Public
+    fann_train_data* data : Public
+    Single[,] inputs : Public
+    Single[,] outputs : Public
+    System.String[] names : Public
+    System.String[] artists : Public
+    System.Drawing.Bitmap[] pictures : Public
+    Int32[] years : Public
+Class NeuroBA01.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
